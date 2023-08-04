@@ -106,3 +106,46 @@ function min(numbers){
 const number = [13,33,3,52,534,2,5,1,0,-22]
 const minNumber = min(number)
 console.log("The minimum number is:",minNumber)
+
+//7. reverse a string
+
+function reverseString(str){
+   if(str.length ===0){
+    return "Empty String"
+   }
+   
+   let reverseString = ""
+   for(let i=str.length-1; i>=0; i--){
+      reverseString += str[i]
+      
+   }
+
+   return reverseString
+}
+
+const strInput = "Hello Safin"
+const strOutput = reverseString(strInput)
+console.log("Reverse String is:",strOutput)
+
+//8. Reverse a word
+
+function reverseWord(words){
+      const word = words.split(" ")
+    //   const reverese = word.reverse()
+    //   return reverese
+    
+    let arr =[]
+    for(let i=word.length-1; i>=0; i--){
+      
+
+      arr.push(word[i])
+      
+    }
+    const arr2 = arr.join(" ")
+
+    return arr2
+}
+
+const wordInput = "hello rahman safin nur al"
+const wordOutput = reverseWord(wordInput)
+console.log("The reverse word is:",wordOutput)
