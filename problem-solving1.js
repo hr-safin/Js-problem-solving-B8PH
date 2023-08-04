@@ -64,3 +64,45 @@ function evenSum(array){
 const evenArray = [1,3,4,54,31,73,84]
 const resultEven = evenSum(evenArray)
 console.log("Sum of Even number:",resultEven)
+
+//5 Find the maximum number from an array
+
+function maximum(numbers){
+   if(numbers.length ===0){
+    return "Array has no element"
+   }
+  
+   let max = numbers[0]
+   for(let item of numbers){
+     if(item > max)
+      max = item
+   }
+
+   return max
+}
+
+const height = [167,34,22,222,190]
+const maximumOutput = maximum(height)
+console.log("Maximum height is:",maximumOutput)
+
+//6. Find the minimum number from an array
+
+function min(numbers){
+   if(numbers.length ===0){
+    return "Array has not any element"
+   }
+  
+   let min = numbers[0]
+   for(let i =0; i<numbers.length;i++){
+      
+      if(numbers[i]<min){
+        min = numbers[i]
+      }
+   }
+
+   return min
+}
+
+const number = [13,33,3,52,534,2,5,1,0,-22]
+const minNumber = min(number)
+console.log("The minimum number is:",minNumber)
