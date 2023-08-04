@@ -149,3 +149,58 @@ function reverseWord(words){
 const wordInput = "hello rahman safin nur al"
 const wordOutput = reverseWord(wordInput)
 console.log("The reverse word is:",wordOutput)
+
+//9. Write a function that calculates the average of numbers in an array.
+
+function arrayOfAverage(array){
+    
+    let sum =0
+    for(let i=0; i<array.length; i++){
+      sum +=array[i]
+    }
+
+    const average = sum/array.length
+    return average
+}
+
+const averageArray = [1,2,3,4,5,6,7,8,9,10]
+
+const averageOutput = arrayOfAverage(averageArray)
+console.log(averageOutput)
+
+//10. reverse a character from string using split,reverse,join
+
+function reverseString(string){
+   const word = string.split("")
+   const reverse = word.reverse()
+   const join = reverse.join("")
+   return join
+}
+const strr = "reverse string"
+const outputReverse = reverseString(strr)
+console.log(outputReverse)
+
+//10. Write a function that sorts an array in ascending order.
+
+function sortAscendingWay(arr){
+   
+    let ascending =arr.sort(
+    function(a,b){
+        return a - b
+    }
+   )
+
+   return ascending
+}
+const ascenArr = [1,23,52,13,131,51,234,122,13,3,53,2,5,3]
+const outputAscending = sortAscendingWay(ascenArr)
+console.log(outputAscending)
+
+//11. Swap two variables without using a temporary variable.
+
+function swap(a,b){
+    return [a,b] = [b,a]
+}
+
+const swapVariable = swap(10,20)
+console.log(swapVariable)
