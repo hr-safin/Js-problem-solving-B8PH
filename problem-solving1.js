@@ -254,3 +254,16 @@ const array1 = [1,2,3,4,5,6]
 const array2 = [8,6,9,10]
 
 console.log(concatArray(array1,array2))
+
+//15. Add new element after deleting 5 element starting from index 2 then add 55,66,77,88,99
+
+function splicing(arr){
+   const deletedAndAdded = arr.splice(2,5,55,66,77,88,99)
+   return deletedAndAdded;
+}
+
+const spliceArray = [1,2,3,4,5,6,7,8]
+const newArray = splicing(spliceArray)
+console.log("The new array:",spliceArray)
+
+console.log("Removed:",newArray)
