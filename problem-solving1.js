@@ -204,3 +204,19 @@ function swap(a,b){
 
 const swapVariable = swap(10,20)
 console.log(swapVariable)
+
+//12. Create a function that returns the factorial of a given number.
+ 
+function factorial(number){
+  
+    let product =1
+    for(let i=number; i>0; i--){
+       product *= i   
+    }
+    return product
+
+}
+
+const factorialNumber = 6
+const factorialOutput = factorial(factorialNumber)
+console.log(factorialOutput)
