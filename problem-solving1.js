@@ -220,3 +220,37 @@ function factorial(number){
 const factorialNumber = 6
 const factorialOutput = factorial(factorialNumber)
 console.log(factorialOutput)
+
+
+//13. Implement a function to find the maximum of two numbers.
+
+function findMaxOfTwo(num1,num2){
+   
+    if(num1>num2){
+        return "Number1 is the largest"
+    }else if(num2>num1){
+        return "Number2 is the largest"
+    }else{
+        return "They are equal"
+    }
+ 
+}
+
+const number1 = 60
+const number2 = 70
+
+const printTheMax = findMaxOfTwo(number1,number2)
+console.log(printTheMax)
+
+
+//14. concat two array
+
+function concatArray(arr1,arr2){
+    const newArray = arr1.concat(arr2)
+    return newArray;
+}
+
+const array1 = [1,2,3,4,5,6]
+const array2 = [8,6,9,10]
+
+console.log(concatArray(array1,array2))
