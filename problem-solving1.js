@@ -391,3 +391,22 @@ const elem = 10
 
 const occurrenceOutput = findAll(occurrenceArray, elem)
 console.log(occurrenceOutput)
+
+//21. Finding If Element exists else Adding the Element
+
+function findExit(array,element){
+    if(array.indexOf(element) === -1){
+    // simply you have to return the new array after pushing (array.push(element)) the new element to the array 
+       array.push(element)
+       return array
+    }else{
+       return array
+    }
+}
+
+const element = "safin"
+
+const extitArray = ["wasif","jon","hrs","sins"]
+
+const exitOutput = findExit(extitArray, element)
+console.log(exitOutput)
