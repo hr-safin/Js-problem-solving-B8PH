@@ -370,3 +370,24 @@ const stringOfArrays = ["saifn","wasdi","hasibur rahman safin","rahman","rahman 
 
 const stringOutputs = stringElements(stringOfArrays)
 console.log("Largest String:",stringOutputs)
+
+//20. Finding All the Occurrences of an Element
+
+function findAll(array, element){
+    
+    let occArray = []
+    for(let i=0; i<array.length; i++){
+        let index = array[i]
+        if(index ===element){
+            occArray.push(i)
+        }
+
+    }
+    return occArray
+}
+
+const occurrenceArray = [1,2,3,10,20,10,22,10,22,5,6,7,8,20,20]
+const elem = 10
+
+const occurrenceOutput = findAll(occurrenceArray, elem)
+console.log(occurrenceOutput)
