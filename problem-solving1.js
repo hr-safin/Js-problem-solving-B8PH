@@ -312,10 +312,36 @@ function largestCamera(phoneDetails){
        
     }
 
-    return largest
-
-    
+    return largest  
 }
 
 const largerPixel = largestCamera(phoneDetails)
 console.log(largerPixel)
+
+//18. Calculate the total cost of the products in a shopping cart
+
+const shoppingCart = [
+    {name: "pant",price: 3000},
+    {name: "t-shirt",price: 1000},
+    {name: "shirt",price: 2000},
+    {name: "belt",price: 1000},
+    {name: "polo-shirt",price: 1000},
+    {name: "sneakers",price: 11000},
+]
+
+function calculatePrice(shoppingCart){
+   
+    let sum =0
+    for(let i=0; i<shoppingCart.length; i++){
+        
+        let product = shoppingCart[i]
+        
+        sum += product.price
+
+    }
+
+    return sum
+}
+
+const productPrice = calculatePrice(shoppingCart)
+console.log("Total Cost:",productPrice,"Taka")
