@@ -267,3 +267,23 @@ const newArray = splicing(spliceArray)
 console.log("The new array:",spliceArray)
 
 console.log("Removed:",newArray)
+
+//16. Remove duplicate items from an array
+
+function duplicate(num){
+        
+        let newArray = []
+        for(let i=0; i<num.length; i++){
+             if(newArray.includes(num[i]) ===false){
+                newArray.push(num[i])
+             }
+            
+        }
+
+        return newArray
+}
+
+const removeArray = [1,2,3,3,2,1,"safin","wasif","nur","wasif"]
+const outputOfRemove = duplicate(removeArray)
+console.log("Old Array:",removeArray)
+console.log("New Array:",outputOfRemove)
