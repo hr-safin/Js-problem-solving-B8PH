@@ -321,12 +321,12 @@ console.log(largerPixel)
 //18. Calculate the total cost of the products in a shopping cart
 
 const shoppingCart = [
-    {name: "pant",price: 3000},
-    {name: "t-shirt",price: 1000},
-    {name: "shirt",price: 2000},
-    {name: "belt",price: 1000},
-    {name: "polo-shirt",price: 1000},
-    {name: "sneakers",price: 11000},
+    {name: "pant",price: 3000, quantity: 3},
+    {name: "t-shirt",price: 1000, quantity: 4},
+    {name: "shirt",price: 2000, quantity: 3},
+    {name: "belt",price: 1000, quantity: 1},
+    {name: "polo-shirt",price: 1000, quantity: 7},
+    {name: "sneakers",price: 11000, quantity: 2},
 ]
 
 function calculatePrice(shoppingCart){
@@ -335,8 +335,11 @@ function calculatePrice(shoppingCart){
     for(let i=0; i<shoppingCart.length; i++){
         
         let product = shoppingCart[i]
+
+        const productTotal = product.price * product.quantity
         
-        sum += product.price
+        sum += productTotal
+        
 
     }
 
