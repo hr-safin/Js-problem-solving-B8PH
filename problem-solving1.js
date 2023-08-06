@@ -348,3 +348,25 @@ function calculatePrice(shoppingCart){
 
 const productPrice = calculatePrice(shoppingCart)
 console.log("Total Cost:",productPrice,"Taka")
+
+
+//19. find the largest string element from an array
+
+function stringElements(ar){
+    
+    let largestString = ar[0]
+    for(let i=0; i<ar.length; i++){
+        let index = ar[i]
+        if(index.length > largestString.length){
+            largestString = index
+        }
+        
+    }
+
+    return largestString
+}
+
+const stringOfArrays = ["saifn","wasdi","hasibur rahman safin","rahman","rahman safin rahman hasib"]
+
+const stringOutputs = stringElements(stringOfArrays)
+console.log("Largest String:",stringOutputs)
