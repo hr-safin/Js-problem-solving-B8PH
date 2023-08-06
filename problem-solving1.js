@@ -287,3 +287,35 @@ const removeArray = [1,2,3,3,2,1,"safin","wasif","nur","wasif"]
 const outputOfRemove = duplicate(removeArray)
 console.log("Old Array:",removeArray)
 console.log("New Array:",outputOfRemove)
+
+//17. Find the largest mega pixel camera phone from an array of phone objects
+
+const phoneDetails = [
+    {name : "Samsung",Camera : 15,Storage: "62gb", Price: 22000},
+    {name : "RealMe",Camera : 5,Storage: "32gb", Price: 10000},
+    {name : "Iphone",Camera : 17,Storage: "132gb", Price: 122000},
+    {name : "Pixel",Camera : 14,Storage: "32gb", Price: 88000},
+    {name : "Huawai",Camera : 25,Storage: "232gb", Price: 222000}
+
+
+]
+
+
+function largestCamera(phoneDetails){
+     
+    let largest = phoneDetails[0]
+    for(let i=0; i<phoneDetails.length; i++){
+        let item = phoneDetails[i]
+        if(item.Camera > largest.Camera){
+            largest = item
+        }
+       
+    }
+
+    return largest
+
+    
+}
+
+const largerPixel = largestCamera(phoneDetails)
+console.log(largerPixel)
