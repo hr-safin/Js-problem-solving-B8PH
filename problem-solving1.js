@@ -446,3 +446,22 @@ function findingBadData(arr){
 
 const badDataArray = [1,2,3,-5,-6,-4,10,-20]
 console.log("The number of bad element is:",findingBadData(badDataArray))
+
+//23. fun task:// a function has 3 parameter singaraPrice, samosaPrice, jilapiPrice,
+// where 1 singaraPrice = 10, 1 samosaPrice = 5, 1 jilapiPrice = 20 now find the total cost if you want 3 singara , 2 samosa , 4 jilapi from the shop
+
+function expense(singara,samosa,jilapi){
+    const singaraPrice = 10
+    const samosaPrice = 5
+    const jilapiPrice = 20
+    const quantitySingara = singara * singaraPrice
+    const quantitySamosa = samosa * samosaPrice
+    const quantityJilapi = jilapi * jilapiPrice
+    const totalCost = quantitySingara + quantitySamosa + quantityJilapi
+    return totalCost
+  }
+  
+  const singara = 3
+  const samosa = 2
+  const jilapi = 4
+  console.log("Total Cost:",expense(singara,samosa,jilapi),"Taka")
