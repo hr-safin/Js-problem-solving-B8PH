@@ -539,3 +539,16 @@ function isValidPhotoName(photoName,imageExtensions){
 const photoName = "safin.jpg"
 const imageExtensions = [".jpg","jpeg",".png",".gif",".ico","JPEG"]
 console.log(isValidPhotoName(photoName,imageExtensions))
+
+//26. How to find the factorial with recursion:
+
+function factorialRec(n){
+    if(n ===0){
+        return 1
+    }
+
+    const factorial = n * factorialRec(n-1)
+    return factorial
+}
+
+console.log(factorialRec(5))
