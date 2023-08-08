@@ -551,7 +551,7 @@ function factorialRec(n){
     return factorial
 }
 
-console.log(factorialRec(5))
+console.log("The factorial is:",factorialRec(5))
 
 
 // 27. /* function name sumOfN(). you will be provided a number n. you have to calculate the total of all numbers between 1 to n . use function recursion
@@ -573,12 +573,14 @@ function sumOfN(n){
 }
 
 const n = 3;
-console.log(sumOfN(n))
+console.log("The sum is:",sumOfN(n))
 
 //28. Find the second largest number from an array
 
 function secondLargest(sArr){
-    
+    if(sArr.length ===0){
+        return "provide valid array"
+    }
     let largest = -Infinity
     let second = - Infinity
     for(let i=0; i<sArr.length; i++){
@@ -593,4 +595,33 @@ function secondLargest(sArr){
 
 const sArr = [1,2,3,4,6,10,20,39]
 const secondOutput = secondLargest(sArr)
-console.log(secondLargest)
+console.log("The secondLargest number is:",secondLargest)
+
+//29. Find the second smallest  number from an array
+
+function secondSmallest(array){
+      if(array.length ===0 || array.length < 2){
+        return "there is no second smallest number in array"
+      }
+      let smallest = Infinity
+      let secondSmallest = Infinity
+      for(let i=0; i<array.length; i++){
+         if(array[i] < smallest){
+            secondSmallest = smallest
+            smallest = array[i]
+         }else if(array[i] < secondSmallest && array[i] !== smallest){
+            secondSmallest = array[i]
+         }
+      }
+
+      if(secondSmallest === Infinity){
+        return "There is no second smallest  number"
+      }else{
+         return secondSmallest
+      }
+}
+
+const smallestArray = [1,3,3,5,2,-1,-10,20,-90,30]
+
+const smallestOutput = secondSmallest(smallestArray)
+console.log("The second smallest number:",smallestOutput)
