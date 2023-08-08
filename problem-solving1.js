@@ -574,3 +574,23 @@ function sumOfN(n){
 
 const n = 3;
 console.log(sumOfN(n))
+
+//28. Find the second largest number from an array
+
+function secondLargest(sArr){
+    
+    let largest = -Infinity
+    let second = - Infinity
+    for(let i=0; i<sArr.length; i++){
+        if(sArr[i]>largest){
+            secondLargest = largest
+            largest = sArr[i]
+        }
+    }
+
+    return secondLargest
+}
+
+const sArr = [1,2,3,4,6,10,20,39]
+const secondOutput = secondLargest(sArr)
+console.log(secondLargest)
