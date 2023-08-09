@@ -625,3 +625,24 @@ const smallestArray = [1,3,3,5,2,-1,-10,20,-90,30]
 
 const smallestOutput = secondSmallest(smallestArray)
 console.log("The second smallest number:",smallestOutput)
+
+
+// how many vowels are in the string count them
+
+function coutnVowel(arr,string){
+    let iterable = Array.from(string)
+    let count = 0
+
+    for(let i=0; i<iterable.length; i++){
+        if(arr.includes(iterable[i])){
+            count++
+        }
+    }
+    return count
+}
+
+const love = "i love BanglAdesH"
+
+const vowelArray = ["a","o","u","e","i","A","O","U","","I"]
+
+console.log("Total number vowel is:",coutnVowel(vowelArray,love))
