@@ -646,3 +646,27 @@ const love = "i love BanglAdesH"
 const vowelArray = ["a","o","u","e","i","A","O","U","","I"]
 
 console.log("Total number vowel is:",coutnVowel(vowelArray,love))
+
+//find how many consonant in the string
+
+function consonant(arr,string){
+
+    if(!Array.isArray(arr) || typeof string !=="string"){
+        return "Please provide valid array or string"
+    }
+
+    let convert = Array.from(string)
+    let count = 0
+    for(let i=0; i<convert.length; i++){
+        if(arr.includes(convert[i]) === false && convert[i] !== " "){
+            count++
+        }
+    }
+
+    return count
+}
+
+const blahBlah = "i want to become a full stack developer"
+const arrayOfvowel =["a","o","u","e","i","A","O","U","I"]
+
+console.log("Number of consonant is:",consonant(arrayOfvowel,blahBlah))
