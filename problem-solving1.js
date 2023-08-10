@@ -702,3 +702,39 @@ function smallestWord(string){
 
 const wordSmallest = "mahi safin nur al rahman hrs"
 console.log("Smallest word is:",smallestWord(wordSmallest))
+
+//34. Generate a random number between a given range.
+function getRndInteger(min, max) {
+    return Math.floor(Math.random() * (max - min + 1) ) + min;
+}
+
+console.log(getRndInteger(1,100))
+
+//35. Sort an array of strings in alphabetical order.
+
+function alphabetical(array){
+   const sortingString = array.sort()
+   return sortingString
+}
+
+const alphabeticalArray = ["wasif","akram","bob","ogy","tom","cockroach"]
+console.log(alphabetical(alphabeticalArray))
+
+// 36. Remove all falsy values from an array.
+
+function removeFalsy(arr1,arr2){
+   let newArry = []
+
+   for(let i=0; i<arr1.length; i++){
+     if(arr2.includes(arr1[i]) !== true){
+        newArry.push(arr1[i])
+     }
+   }
+
+   return newArry
+}
+
+const falsy = [null,undefined,NaN,"",0,false,]
+const falsyArray = ["",false,null,"safin",1,2,undefined,NaN,"mahi","23",0,"john"]
+
+console.log(removeFalsy(falsyArray,falsy))
