@@ -738,3 +738,17 @@ const falsy = [null,undefined,NaN,"",0,false,]
 const falsyArray = ["",false,null,"safin",1,2,undefined,NaN,"mahi","23",0,"john"]
 
 console.log(removeFalsy(falsyArray,falsy))
+
+//37. Merge two sorted arrays into a single sorted array.
+
+function merge(arr1,arr2){
+    let sort1 = arr1.sort()
+    let sort2 = arr2.sort()
+   const mergeTwoArray = sort1.concat(sort2)
+   return mergeTwoArray;
+
+}
+
+const sort1Array = ["safin","wasif","abdu","jhon","don","pung","cat","apple"]
+const sort2Array = ["sentence","vowel","abide","ogy","full","stack"]
+console.log(merge(sort1Array,sort2Array))
