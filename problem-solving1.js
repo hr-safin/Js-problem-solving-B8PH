@@ -627,7 +627,7 @@ const smallestOutput = secondSmallest(smallestArray)
 console.log("The second smallest number:",smallestOutput)
 
 
-// how many vowels are in the string count them
+//30. how many vowels are in the string count them
 
 function coutnVowel(arr,string){
     let iterable = Array.from(string)
@@ -647,7 +647,7 @@ const vowelArray = ["a","o","u","e","i","A","O","U","","I"]
 
 console.log("Total number vowel is:",coutnVowel(vowelArray,love))
 
-//find how many consonant in the string
+//31. find how many consonant in the string
 
 function consonant(arr,string){
 
@@ -670,3 +670,35 @@ const blahBlah = "i want to become a full stack developer"
 const arrayOfvowel =["a","o","u","e","i","A","O","U","I"]
 
 console.log("Number of consonant is:",consonant(arrayOfvowel,blahBlah))
+
+//32. Find the length of the longest word in a string.
+
+function longest(string){
+   const newArr = string.split(" ")
+   let longestStr = newArr[0]
+   for(let i=0; i<newArr.length; i++){
+     if(newArr[i].length > longestStr.length){
+        longestStr = newArr[i]
+     }
+   }
+   return longestStr
+}
+
+const longestString = "i love bangladesh argentina unitedstateofamerica "
+console.log("Longest word is:",longest(longestString))
+
+//33. Find the length of the smallest word in a string.
+
+function smallestWord(string){
+   const words = string.split(" ")
+   let smallest = words[0]
+   for(let word of words){
+      if(word.length < smallest.length){
+        smallest = word
+      }
+   }
+   return smallest
+}
+
+const wordSmallest = "mahi safin nur al rahman hrs"
+console.log("Smallest word is:",smallestWord(wordSmallest))
