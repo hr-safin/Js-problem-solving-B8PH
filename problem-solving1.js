@@ -762,3 +762,36 @@ function power(number){
 
 const powerNumber = 4
 console.log("The power of number is:",power(powerNumber))
+
+//39. Calculate the factorial of a number using recursion.
+
+function recursionFactorial(number){
+   if(number <=0){
+    return 1
+   }
+
+   let factorial = number * recursionFactorial(number -1)
+   return factorial
+}
+
+const recursionNumber = 5
+
+console.log(recursionFactorial(recursionNumber))
+
+//40. Find the common elements between two arrays.
+
+function commonElem(array1,array2){
+    let newCommonArray = []
+    for(let i=0; i<array1.length; i++){
+        if(array2.includes(array1[i]) === true){
+            newCommonArray.push(array1[i])
+        }
+    }
+
+    return newCommonArray
+}
+
+const common1 = [1,2,4,2,6,7,8,9,0,"safin","full stack"]
+const common2 = [1,"safin","full stack",0,6]
+
+console.log(commonElem(common1,common2))
