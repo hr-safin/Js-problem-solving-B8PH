@@ -752,3 +752,13 @@ function merge(arr1,arr2){
 const sort1Array = ["safin","wasif","abdu","jhon","don","pung","cat","apple"]
 const sort2Array = ["sentence","vowel","abide","ogy","full","stack"]
 console.log(merge(sort1Array,sort2Array))
+
+//38. Calculate the power of a number.
+
+function power(number){
+    let powerOfNumber = Math.pow(number,2)
+    return powerOfNumber
+}
+
+const powerNumber = 4
+console.log("The power of number is:",power(powerNumber))
