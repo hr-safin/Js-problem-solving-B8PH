@@ -795,3 +795,24 @@ const common1 = [1,2,4,2,6,7,8,9,0,"safin","full stack"]
 const common2 = [1,"safin","full stack",0,6]
 
 console.log(commonElem(common1,common2))
+
+
+//41. Find the GCD (Greatest Common Divisor) of two numbers.
+
+function gcd(number1,number2){
+    let divisor
+   for(let i=1; i<=number1 && i<=number2; i++){
+        if(number1 % i === 0 && number2 % i ===0){
+                divisor = i
+        }
+   }
+
+   return divisor
+}
+
+const numb1 = 10
+const numb2 = 20
+console.log(gcd(numb1,numb2))
+
+
+
