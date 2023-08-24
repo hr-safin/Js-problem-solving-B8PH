@@ -113,3 +113,80 @@ const arr1 = [1,2,3,4,5,55]
 const arr2 = [33,43,56]
 
 console.log(combineArray(arr1,arr2))
+
+// 9.8 combine two array then from that array find the maximum number
+
+const maximumFind = (arr1,arr2) => {
+    const newArr = arr1.concat(arr2)
+
+    let maximum = newArr[0]
+
+    for(let i=0; i<newArr.length; i++){
+        if(newArr[i] > maximum ){
+            maximum = newArr[i]
+        }
+    }
+
+    return {newArr,maximum}
+}
+
+console.log(maximumFind(arr1,arr2))
+
+// 10.print all the array element
+
+const allArray = [1,2,4,44]
+
+const mapping = allArray.map(n => {
+    return n
+})
+
+console.log(mapping)
+
+// 11. object chaining find product2 from array of object
+
+// const productList = [
+//     {
+//         name : "hasibur rahman safim",
+//         id:1,
+//         age : 34,
+
+//         study : {
+//           sub : "cse",
+//           dream : {
+//              firstOne : "full stack development",
+//              secondOne : "digital marketer",
+//              homeDream : {
+//                 usa : 2030,
+//                 dubai : 2050,
+//                 car : {
+//                    first : "lamborgini",
+//                    second : "ferarri"
+
+//                 }
+//              }
+//           }
+//         }
+//     }
+// ]
+
+// console.log(productList.study.dream.homeDream.car.second)
+
+// 12. check two array element same or not?
+
+const arre1 = [1,2,3,34]
+const arre2 = [1,2,3]
+
+const compare = (arr1,arr2) => {
+    let text
+    for(let i=0; i<arr1.length && arr2.length; i++){
+        if(arr1[i] === arr2[i]){
+             text = "they are same"
+        }else{
+            text = "they are not same"
+        }
+    }
+
+    return text
+}
+
+console.log(compare(arre1,arre2))
