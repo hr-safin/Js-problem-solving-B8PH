@@ -218,3 +218,64 @@ const oddFunc = (arr) => {
 }
 
 console.log(oddFunc(even))
+
+// 15. if an array element is divisible by 10 return them in new array
+
+const filterArray = [20,30,45,65,78,80]
+
+const divFunc = (arr) => {
+    const fileterElem = arr.filter( el => el%10 ===0)
+    return fileterElem
+}
+
+console.log(divFunc(filterArray))
+
+
+16.// count all the occurence in the array of element using forEach()
+
+const occArray = ["a","b","c","d","a","d","b","c"]
+
+const count = {}
+
+const countOcc = occArray.forEach(item => {
+    if(count[item]){
+        count[item]++
+    }else{
+        count[item] =1
+    }
+})
+
+console.log(count)
+
+
+// 17 find the sum of the array element only you can use forEach method
+
+
+const sumArray = [1,2,3,4,5]
+
+let total =0
+
+const sumOfArray = sumArray.forEach(item => {
+    total+=item
+})
+
+console.log(total)
+
+// 18. remove duplicate element from an array
+
+const duplicateArray = [1,2,3,4,43,4,2,1,4,5,5,6,6,6,7,8,8,9]
+
+const removeDuplicate = duplicateArray.filter((value,index,arr) => {
+    return arr.indexOf(value) === index
+    // return arr.indexOf(value) === index
+})
+
+console.log(removeDuplicate)
+
+//19. find element from an array
+
+const findElem = ["safin","safin","wasif","akram"]
+
+const findName = findElem.find(item => item === "safin")
+
+console.log(findName)
