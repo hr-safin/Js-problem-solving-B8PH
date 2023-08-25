@@ -190,3 +190,31 @@ const compare = (arr1,arr2) => {
 }
 
 console.log(compare(arre1,arre2))
+
+// 13. write a arrow function converts odd array to an even array (array.map()) 
+
+const oddArray = [1,3,5,7,9]
+
+const evenArray = (arr) => {
+    const even = arr.map(add => add +1)
+    return even
+}
+
+console.log(evenArray(oddArray))
+
+// 14. write a arrow function to convert even array array to odd array
+
+const even =[2,4,6,8]
+
+const oddFunc = (arr) => {
+    const odd =[]
+
+    for(let arrs of arr){
+    
+        odd.push(arrs+1)
+    }
+
+    return odd
+}
+
+console.log(oddFunc(even))
