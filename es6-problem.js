@@ -279,3 +279,21 @@ const findElem = ["safin","safin","wasif","akram"]
 const findName = findElem.find(item => item === "safin")
 
 console.log(findName)
+
+// 20. sort an array of number 
+
+const sortArray = [10,56,5,400,1,4,-1]
+
+
+const resultSort =sortArray.sort((a,b) => {
+    return a-b
+})
+
+console.log(resultSort)
+
+// 21. reverse an array
+
+const reverseArray = [1,2,3,4,5]
+
+const reverse = reverseArray.reverse()
+console.log(reverse)
