@@ -297,3 +297,10 @@ const reverseArray = [1,2,3,4,5]
 
 const reverse = reverseArray.reverse()
 console.log(reverse)
+
+// 22. Reverse an array
+
+const reverseArrayString =["safin", "wasif", "akram"]
+
+const reverse2 = reverseArrayString.reverse()
+console.log(reverse2)
