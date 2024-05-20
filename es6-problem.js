@@ -291,14 +291,23 @@ const resultSort =sortArray.sort((a,b) => {
 
 console.log(resultSort)
 
-// 21. reverse an array
+// 21. sort an array of number 
+const sortArray2 = [10,56,5,400,1,4,-1]
+
+const resultSort2 = sortArray2.sort((a,b) => {
+    return b - a
+})
+
+console.log(resultSort2)
+
+// 22. reverse an array
 
 const reverseArray = [1,2,3,4,5]
 
 const reverse = reverseArray.reverse()
 console.log(reverse)
 
-// 22. Reverse an array
+// 23. Reverse an array
 
 const reverseArrayString =["safin", "wasif", "akram"]
 
