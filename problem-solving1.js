@@ -14,6 +14,20 @@ function sumOfArray(array){
 const arrayOfNumber = [1,3,5,3,52]
 const sumResult = sumOfArray(arrayOfNumber)
 console.log(sumResult)
+function sumOfArray(array){
+    let sum = 0
+    for(let i=0; i<array.length; i++){
+     let arrays = array[i]
+     sum += arrays
+
+    }
+
+    return sum;
+}
+
+const arrayOfNumber2 = [1,3,5,3,52]
+const sumResult2 = sumOfArray(arrayOfNumber2)
+console.log(sumResult2)
 
 //2. sum of all the array element(for of loop)
 
