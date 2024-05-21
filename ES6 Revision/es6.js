@@ -1,0 +1,1 @@
+//Es6 concept of js
