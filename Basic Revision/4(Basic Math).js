@@ -15,3 +15,10 @@ myVar = myVar + 1
 // Alternative way to increment any number
 
 myVar++
+
+//Decrement Number
+var myVar2
+myVar2 = myVar2 - 1
+
+// Alternative way to decrement any number
+myVar2--
