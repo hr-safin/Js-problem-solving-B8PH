@@ -22,3 +22,7 @@ myVar2 = myVar2 - 1
 
 // Alternative way to decrement any number
 myVar2--
+
+// const
+
+const name = "Hasibur rahman safin"
